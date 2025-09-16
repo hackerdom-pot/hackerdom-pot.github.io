@@ -18,7 +18,7 @@ export const Footer = () => {
               <a href="https://www.instagram.com/cubeesec/" className="text-gray-400 hover:text-cyan-400 transition-colors" target='_blank'>
                 <LucideInstagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="https://www.facebook.com/people/CUBeeSec-Groups/61571294637347" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/company/cubeesec-securities/posts/?feedView=all" className="text-gray-400 hover:text-cyan-400 transition-colors" target='_blank'>
@@ -46,22 +46,21 @@ export const Footer = () => {
               <li><Link to="/contact-us" className="text-gray-400 hover:text-cyan-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
-
-
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><p className="text-gray-400 ">Security Audit</p></li>
-              <li><p className="text-gray-400 ">Penetration Testing</p></li>
-              <li><p className="text-gray-400 ">Physcial Security Simulation</p></li>
-              <li><p className="text-gray-400 ">Security Training</p></li>
+              <li><Link to="/services/web-application-penetration-testing" className="text-gray-400 hover:text-cyan-400 transition-colors">Web Application Penetration Testing</Link></li>
+              <li><Link to="/services/mobile-application-penetration-testing" className="text-gray-400 hover:text-cyan-400 transition-colors">Mobile Application Penetration Testing</Link></li>
+              <li><Link to="/services/api-penetration-testing" className="text-gray-400 hover:text-cyan-400 transition-colors">API Penetration Testing</Link></li>
+              <li><Link to="/services/network-penetration-testing" className="text-gray-400 hover:text-cyan-400 transition-colors">Network Penetration Testing</Link></li>
+              <li><Link to="/services/active-directory-penetration-testing" className="text-gray-400 hover:text-cyan-400 transition-colors">Active Directory Penetration Testing</Link></li>
+              <li><Link to="/services/physical-security-testing" className="text-gray-400 hover:text-cyan-400 transition-colors">Physical Security Simulation</Link></li>
             </ul>
           </div>
-
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>GN Krishna Nagar,</li>
+              <li>2/220,</li>
               <li>Pongupalayam, Kanalampalayam</li>
               <li>Tirupur</li>
               <li>Phone: 8790407216</li>
@@ -71,7 +70,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} CUBeeSEC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} CUBeeSEC Securities. All rights reserved.</p>
         </div>
       </div>
     </footer>

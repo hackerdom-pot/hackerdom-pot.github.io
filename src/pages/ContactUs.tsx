@@ -145,7 +145,7 @@ export default function ContactUs () {
             <div>
               <h4 className="font-semibold text-lg text-white-400">Address</h4>
               <p className="text-gray-300">
-                Cubeesec groups, GN Krishna Nagar,<br />
+                Cubeesec groups, 2/220,<br />
                 Pongupalayam, Kanalampalayam,<br />
                 Tirupur, India
               </p>
@@ -181,7 +181,7 @@ export default function ContactUs () {
               <a href="https://www.instagram.com/cubeesec/" target="_blank" rel="noreferrer" className="p-2 bg-gray-700 rounded-lg hover:bg-cyan-400/20 transition-all">
                 <LucideInstagram className="w-5 h-5 text-gray-300 hover:text-cyan-400 transition" />
               </a>
-              <a href="https://github.com/cubeesec" target="_blank" rel="noreferrer" className="p-2 bg-gray-700 rounded-lg hover:bg-cyan-400/20 transition-all">
+              <a href="https://www.facebook.com/people/CUBeeSec-Groups/61571294637347/" target="_blank" rel="noreferrer" className="p-2 bg-gray-700 rounded-lg hover:bg-cyan-400/20 transition-all">
                 <Facebook className="w-5 h-5 text-gray-300 hover:text-cyan-400 transition" />
               </a>
               <a href="https://www.linkedin.com/company/cubeesec-securities/" target="_blank" rel="noreferrer" className="p-2 bg-gray-700 rounded-lg hover:bg-cyan-400/20 transition-all">

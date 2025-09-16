@@ -34,12 +34,8 @@ const services = [
 ];
 
 const companies = [
-  { name: 'Microsoft', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg' },
-  { name: 'Google', logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg' },
-  { name: 'Amazon', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg' },
-  { name: 'IBM', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg' },
-  { name: 'Oracle', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg' },
-  { name: 'Cisco', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg' },
+  { name: 'Sprofy', logo: 'https://cdn.dev.sporfy.com/trackboard/commons/png/sporfywhitelogo.png' },
+  { name: 'Greek Pic Creator', logo: 'https://greekpiccreators.in/wp-content/uploads/2024/04/GreekPic-Creators-Private-Limited-Logo.jpg' },
 ];
 
 const stats = [

@@ -63,8 +63,8 @@ const workshops: Workshop[] = [
     date: "2023-11-18",
     time: "10:00",
     duration: "4 hours",
-    instructor: "Alex Rivera",
-    instructorTitle: "Senior Ethical Hacker, Bugcrowd",
+    instructor: "Gokul",
+    instructorTitle: "CEO & Founder of CUBeeSEC",
     description: "Hands-on penetration testing workshop using Kali Linux. Perform real attacks in our controlled lab environment and learn defensive techniques.",
     level: "intermediate",
     recordingAvailable: false,
@@ -90,8 +90,8 @@ const workshops: Workshop[] = [
     date: "2023-11-25",
     time: "13:00",
     duration: "3 hours",
-    instructor: "Dr. Sarah Chen",
-    instructorTitle: "Malware Researcher, CrowdStrike",
+    instructor: "Gokul",
+    instructorTitle: "CEO & Founder of CUBeeSEC",
     description: "Learn to analyze real malware samples safely in our isolated lab environment. Understand behavior analysis and reverse engineering basics.",
     level: "advanced",
     recordingAvailable: false,
@@ -117,8 +117,8 @@ const workshops: Workshop[] = [
     date: "2023-12-02",
     time: "09:30",
     duration: "5 hours",
-    instructor: "Priya Patel",
-    instructorTitle: "AWS Security Architect",
+    instructor: "Gokul",
+    instructorTitle: "CEO & Founder of CUBeeSEC",
     description: "Practical workshop securing cloud infrastructure. Configure security groups, IAM policies, and monitor threats in real-time.",
     level: "intermediate",
     recordingAvailable: false,
@@ -144,8 +144,8 @@ const workshops: Workshop[] = [
     date: "2023-12-09",
     time: "14:00",
     duration: "6 hours",
-    instructor: "James Wilson",
-    instructorTitle: "CTF Champion & Security Engineer",
+    instructor: "Gokul",
+    instructorTitle: "CEO & Founder of CUBeeSEC",
     description: "Intensive Capture The Flag preparation covering web exploits, forensics, cryptography, and binary reversing.",
     level: "all-levels",
     recordingAvailable: false,
@@ -618,7 +618,7 @@ const WorkshopsPage: React.FC = () => {
             <TestimonialCard
               quote="The malware analysis workshop gave me practical skills I used in my internship the very next week!"
               name="Emily Zhang"
-              role="Security Intern at Palo Alto Networks"
+              role="Security Intern"
               avatar="https://randomuser.me/api/portraits/women/65.jpg"
             />
             <TestimonialCard

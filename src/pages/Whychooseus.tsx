@@ -60,8 +60,8 @@ const webinars: Webinar[] = [
     date: "2023-11-15",
     time: "18:00",
     duration: "90 mins",
-    speaker: "Gokul",
-    speakerTitle: "CEO & Founder Of CUBeeSEC Securities",
+    speaker: "Dr. Sarah Chen",
+    speakerTitle: "Chief Security Architect, FortiGuard",
     description: "Learn advanced techniques to protect against unknown vulnerabilities with real-world case studies from recent attacks.",
     category: "advanced",
     recordingAvailable: true,
@@ -75,8 +75,8 @@ const webinars: Webinar[] = [
     date: "2023-11-22",
     time: "16:00",
     duration: "120 mins",
-    speaker: "Gokul",
-    speakerTitle: "CEO & Founder Of CUBeeSEC Securities",
+    speaker: "James Rodriguez",
+    speakerTitle: "Senior Penetration Tester, Bugcrowd",
     description: "Introduction to ethical hacking methodologies and hands-on exercises with our virtual lab environment.",
     category: "beginner",
     recordingAvailable: false,
@@ -90,8 +90,8 @@ const webinars: Webinar[] = [
     date: "2023-12-05",
     time: "14:00",
     duration: "150 mins",
-    speaker: "Gokul",
-    speakerTitle: "CEO & Founder Of CUBeeSEC Securities",
+    speaker: "Priya Patel",
+    speakerTitle: "AWS Security Lead",
     description: "Comprehensive guide to securing cloud infrastructure across AWS, Azure and GCP platforms.",
     category: "intermediate",
     recordingAvailable: false,
@@ -105,8 +105,8 @@ const webinars: Webinar[] = [
     date: "2023-12-12",
     time: "17:30",
     duration: "60 mins",
-    speaker: "Gokul",
-    speakerTitle: "CEO & Founder Of CUBeeSEC Securities",
+    speaker: "Michael Johnson",
+    speakerTitle: "CISO, Global Bank Corp",
     description: "Panel discussion with industry leaders about building successful careers in cybersecurity.",
     category: "all-levels",
     recordingAvailable: false,
@@ -248,7 +248,7 @@ const WebinarCard: React.FC<WebinarCardProps> = ({ webinar, expanded, onClick } 
   </motion.div>
 );
 
-const WebinarsPage: React.FC = () => {
+const Whychooseus: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [expandedWebinar, setExpandedWebinar] = useState<number | null>(null);
 
@@ -279,10 +279,9 @@ const WebinarsPage: React.FC = () => {
             >
               <div className="bg-purple-600/20 px-4 py-2 rounded-full border border-purple-500 flex items-center justify-center">
                 <ShieldCheck className="w-5 h-5 mr-2 text-purple-300" />
-                <span className="text-purple-300 font-medium">CUBeeSEC KNOWLEDGE HUB</span>
+                <span className="text-purple-300 font-medium">Security is not anymore A Option</span>
               </div>
             </motion.div>
-            
             <motion.h1 
               className="text-5xl md:text-6xl font-bold mb-6"
               style={fontStyle}
@@ -290,7 +289,7 @@ const WebinarsPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Secure. Learn. <span className="text-purple-400">Collaborate.</span>
+              We Break. We Play. <span className="text-purple-400">We Fix.</span>
             </motion.h1>
             <motion.p 
               className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8"
@@ -298,7 +297,7 @@ const WebinarsPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Empowering the next generation of cybersecurity professionals through education and community
+              Shaping the future of cybersecurity by empowering professionals through hands-on learning real-world challenges, and community-driven growth
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -306,10 +305,6 @@ const WebinarsPage: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="flex justify-center gap-4"
             >
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center" onClick={() => window.open('https://www.linkedin.com/company/cubeesec-securities/posts/?feedView=all', '_blank')}>
-                <Rocket className="w-5 h-5 mr-2" />
-                Join Our Community
-              </button>
               
             </motion.div>
           </motion.div>
@@ -341,34 +336,33 @@ const WebinarsPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              At CUBeeSEC, we're building a global community where cybersecurity enthusiasts can learn, 
-              collaborate, and grow together through hands-on education and real-world experiences.
+              At CUBeeSEC, we’re not just another cybersecurity group—we’re a movement. A place where curious minds come to learn, share, and challenge the limits of security.
             </motion.p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <MissionCard 
               icon={BookOpen} 
-              title="Education" 
-              description="Democratizing cybersecurity knowledge through accessible, high-quality resources."
+              title="Community First" 
+              description="Join a thriving network of hackers, learners, and professionals who believe in growing together."
               delay={0}
             />
             <MissionCard 
               icon={Network} 
-              title="Community" 
-              description="Connecting like-minded individuals to share knowledge and opportunities."
+              title="Knowledge Without Barriers" 
+              description="Webinars, live sessions, and real-world case studies designed to keep you ahead of threats."
               delay={1}
             />
             <MissionCard 
               icon={GraduationCap} 
-              title="Mentorship" 
-              description="Bridging the gap between students and industry professionals."
+              title="Mentorship That Matters" 
+              description="Direct guidance from industry experts bridging the gap between learning and doing."
               delay={2}
             />
             <MissionCard 
               icon={Handshake} 
-              title="Collaboration" 
-              description="Fostering partnerships to solve real-world security challenges."
+              title="Collaboration at Scale" 
+              description="Team up with like-minded individuals to solve real-world cybersecurity challenges."
               delay={3}
             />
           </div>
@@ -392,7 +386,7 @@ const WebinarsPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              WHAT WE <span className="text-purple-400">COVER</span>
+              WHAT WE <span className="text-purple-400">Focus</span>
             </motion.h2>
             <motion.p 
               className="text-xl text-gray-300 max-w-4xl mx-auto"
@@ -400,15 +394,15 @@ const WebinarsPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Our webinars and workshops span the entire cybersecurity spectrum, from fundamentals to cutting-edge research.
+              Our entire cybersecurity spectrum, from fundamentals to cutting-edge research.
             </motion.p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
-              "Ethical Hacking", "Cloud Security", "Threat Intelligence", 
-              "Digital Forensics", "IoT Security", "Network Defense",
-              "Cryptography", "Compliance", "Incident Response", "Career Growth"
+              "Vulnerability Assessment", "Penetration Testing", "Web Application Security", 
+              "Mobile Application Security", "IoT Security", "Network Security",
+              "Wireless Security", "Compliance Audits", "Red Teaming Assessments", "Career Growth"
             ].map((topic, index) => (
               <motion.div
                 key={topic}
@@ -428,150 +422,8 @@ const WebinarsPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Category Filter */}
-      <section className="py-12 px-4 bg-black sticky top-0 z-20 border-b border-gray-800">
-        <div className="max-w-7xl mx-auto">
-          <motion.div 
-            className="flex flex-wrap justify-center gap-2 md:gap-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            {categories.map((category) => {
-              const Icon = category.icon;
-              return (
-                <button
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={`flex items-center px-4 py-2 rounded-full transition-colors ${
-                    selectedCategory === category.id
-                      ? 'bg-purple-600 text-white'
-                      : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-                  }`}
-                >
-                  <Icon className="w-5 h-5 mr-2" />
-                  <span>{category.name}</span>
-                </button>
-              );
-            })}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Webinars Grid */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <motion.h2 
-            className="text-3xl font-bold mb-12 text-center"
-            style={fontStyle}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ margin: "-100px" }}
-          >
-            {selectedCategory === 'all' 
-              ? 'UPCOMING LEARNING SESSIONS' 
-              : `${selectedCategory.toUpperCase()} LEVEL SESSIONS`}
-          </motion.h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <AnimatePresence>
-              {filteredWebinars.map((webinar) => (
-                <WebinarCard
-                  key={webinar.id}
-                  webinar={webinar}
-                  expanded={expandedWebinar === webinar.id}
-                  onClick={() => toggleWebinar(webinar.id)}
-                />
-              ))}
-            </AnimatePresence>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 px-4 bg-gradient-to-b from-black to-purple-900/10">
-        <div className="max-w-7xl mx-auto">
-          <motion.h2 
-            className="text-3xl font-bold mb-12 text-center"
-            style={fontStyle}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ margin: "-100px" }}
-          >
-            OUR <span className="text-purple-400">COMMUNITY</span> SPEAKS
-          </motion.h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TestimonialCard
-              quote="CUBeeSEC's hands-on approach helped me transition from a CS student to a security analyst in just 6 months."
-              name="Alex Johnson"
-              role="Security Analyst"
-              avatar="https://randomuser.me/api/portraits/men/32.jpg"
-            />
-            <TestimonialCard
-              quote="The community projects gave me practical experience that was invaluable during job interviews."
-              name="Maria Garcia"
-              role="Cybersecurity Intern"
-              avatar="https://randomuser.me/api/portraits/women/44.jpg"
-            />
-            <TestimonialCard
-              quote="As an educator, I recommend CUBeeSEC to all my students for their practical, real-world focused approach."
-              name="Dr. Robert Chen"
-              role="Professor of Cybersecurity"
-              avatar="https://randomuser.me/api/portraits/men/75.jpg"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      {/* <section className="py-24 px-4 bg-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ margin: "-100px" }}
-          >
-            <motion.div
-              animate={{ 
-                rotate: [0, 10, -10, 0],
-                scale: [1, 1.1, 1.1, 1]
-              }}
-              transition={{ 
-                repeat: Infinity, 
-                repeatType: "reverse", 
-                duration: 3 
-              }}
-              className="inline-block mb-6"
-            >
-              <Award className="w-16 h-16 text-purple-400 mx-auto" />
-            </motion.div>
-            <h2 className="text-3xl font-bold text-white mb-6" style={fontStyle}>
-              READY TO <span className="text-purple-400">LEVEL UP</span> YOUR SKILLS?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join thousands of students and professionals in our cybersecurity learning community.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
-                <GraduationCap className="w-5 h-5 mr-2" />
-                STUDENT MEMBERSHIP
-              </button>
-              <button className="bg-transparent border border-purple-500 text-purple-400 hover:bg-purple-500/10 px-8 py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
-                <Handshake className="w-5 h-5 mr-2" />
-                INDUSTRY PARTNERSHIP
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
     </div>
   );
 };
 
-export default WebinarsPage;
+export default Whychooseus;

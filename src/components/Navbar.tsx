@@ -4,20 +4,22 @@ import { Menu, X, ChevronDown, Shield, Hexagon, Network, Code2, Server, Lock, Sh
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import logo from '../images/logo.png';
 
-
 const navItems = {
   Corporate: [
     { name: 'About Us', icon: <ShieldCheck className="w-5 h-5 text-purple-400" />, description: 'Discover our mission and values' },
-    { name: 'Our approach', icon: <Code2 className="w-5 h-5 text-purple-400" />, description: 'Latest security insights and news' },
-    { name: 'What we do?', icon: <Network className="w-5 h-5 text-purple-400" />, description: 'Meet our cybersecurity experts' },
-    { name: 'Blogs', icon: <Hexagon className="w-5 h-5 text-purple-400" />, description: 'Check out our accomplishments' },
+    { name: 'Why CUBeeSEC', icon: <Hexagon className="w-5 h-5 text-purple-400" />, description: 'Check out our accomplishments' },
   ],
-  Services: [], // Empty array means no dropdown
+  Services: [{ name: 'Web Application Penetration Testing', icon: <ShieldCheck className="w-5 h-5 text-purple-400" />, description: 'Discover our mission and values' },
+    { name: 'API Penetration Testing', icon: <Code2 className="w-5 h-5 text-purple-400" />, description: 'Latest security insights and news' },
+    { name: 'Mobile Application Penetration Testing', icon: <Network className="w-5 h-5 text-purple-400" />, description: 'Meet our cybersecurity experts' },
+    { name: 'Network Penetration Testing', icon: <Hexagon className="w-5 h-5 text-purple-400" />, description: 'Check out our accomplishments' },
+    { name: 'Active Directory Penetration Testing', icon: <Hexagon className="w-5 h-5 text-purple-400" />, description: 'Check out our accomplishments' },
+    { name: 'Physical Security Testing', icon: <Hexagon className="w-5 h-5 text-purple-400" />, description: 'Check out our accomplishments' },
+  ], // Empty array means no dropdown
   Training: [
     { name: 'Webinars', icon: <Lock className="w-5 h-5 text-purple-400" />, description: 'Learn virtually' },
     { name: 'Workshops', icon: <Server className="w-5 h-5 text-purple-400" />, description: 'Hands-on training sessions' }
   ],
-  // 'Why CUBeeSEC?': [],
   'Contact Us': []
 };
 
@@ -27,6 +29,7 @@ const categoryIcons = {
   'Why CUBeeSEC?': <ShieldCheck className="w-6 h-6 text-purple-400" />,
   'Contact Us': <Hexagon className="w-6 h-6 text-purple-400" />,
   Training: <ShipWheelIcon className="w-6 h-6 text-purple-400" />,
+  Audits: <ShieldCheck className="w-6 h-6 text-purple-400" />,
 };
 
 export const Navbar = () => {
