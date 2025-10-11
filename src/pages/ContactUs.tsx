@@ -60,7 +60,7 @@ export default function ContactUs () {
 
     const { name, email, subject, message } = formData;
     const body = `Hello Cubeesec,%0A%0AMy name is ${encodeURIComponent(name)}. ${encodeURIComponent(message)}%0A%0ABest regards,%0A${encodeURIComponent(name)}%0A${encodeURIComponent(email)}`;
-    const mailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=cubeesec.group@gmail.com&su=${encodeURIComponent(subject || 'Contact from Website')}&body=${body}`;
+    const mailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=gokul@cubeesec.com&su=${encodeURIComponent(subject || 'Contact from Website')}&body=${body}`;
 
     window.open(mailLink, '_blank');
   };
@@ -170,7 +170,7 @@ export default function ContactUs () {
             </div>
             <div>
               <h4 className="font-semibold text-lg text-white-400">Email</h4>
-              <p className="text-gray-300">cubeesec.group@gmail.com</p>
+              <p className="text-gray-300">gokul@cubeesec.com</p>
             </div>
           </div>
 
