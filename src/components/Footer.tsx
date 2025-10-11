@@ -63,8 +63,8 @@ export const Footer = () => {
               <li>2/220,</li>
               <li>Pongupalayam, Kanalampalayam</li>
               <li>Tirupur</li>
-              <li>Phone: 8790407216</li>
-              <li>Email: cubeesec.group@gmail.com</li>
+              <li>Phone: +91-8790407216</li>
+              <li>Email: gokul@cubeesec.com</li>
             </ul>
           </div>
         </div>
