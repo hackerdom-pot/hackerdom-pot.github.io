@@ -80,7 +80,7 @@ export const Navbar = () => {
               transition={{ duration: 1 }}
               className="p-1 rounded-full bg-black"
             >
-              <img src={CubeeSECLogo} className="w-12 h-12 text-white" />
+              <img src={logo} className="w-12 h-12 text-white" />
             </motion.div>
             <motion.span 
               initial={{ opacity: 0, x: -10 }}
