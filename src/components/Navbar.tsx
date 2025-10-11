@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Shield, Hexagon, Network, Code2, Server, Lock, ShieldCheck, ShipWheelIcon } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
-import logo from '../images/logo.png';
+import logo from '/src/images/CUBeeSEC Only Logo.png';
 
 const navItems = {
   Corporate: [
